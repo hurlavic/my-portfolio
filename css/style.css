@@ -37,7 +37,7 @@ h2 {
 /* hero section */
 
 .heroImage{
-    background-image: url("../images/background.jpg");
+    background-image: url("./images/background.jpg");
     height: 300px;
     background-position: center;
     background-repeat: no-repeat;
@@ -96,23 +96,23 @@ h2 {
 
 .placeholder1{
     grid-area: placeholder1;
-    background-image: url("../images/placeholder1.jpg");
+    background-image: url("./images/placeholder1.jpg");
 }
 .placeholder2{
 grid-area: placeholder2;
-background-image: url("../images/placeholder2.jpg");
+background-image: url("./images/placeholder2.jpg");
 }
 .placeholder3{
     grid-area: placeholder3;
-    background-image: url("../images/placeholder3.jpg");
+    background-image: url("./images/placeholder3.jpg");
 }
 .placeholder4{
     grid-area: placeholder4;
-    background-image: url("../images/placeholder4.jpg");
+    background-image: url("./images/placeholder4.jpg");
 }
 .placeholder5{
     grid-area: placeholder5;
-    background-image: url("../images/placeholder5.jpg");
+    background-image: url("./images/placeholder5.jpg");
 }
 #gridWork{
     background-position: center;
