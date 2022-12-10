@@ -169,4 +169,8 @@ background-image: url("../images/placeholder2.jpg");
     margin-left: 45px;
 }
 
-
+/* Responsive CSS layout */
+@media only screen and (max-width: 1000px){
+    
+}
+    
