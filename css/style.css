@@ -165,13 +165,11 @@ background-image: url("../images/placeholder2.jpg");
         justify-items: center;
         margin: 0 auto;
     }
-
 .header{
     display:flex;
     flex-direction: column;
     justify-content: center;
   }
-
 .nav_links li {
     display: block;
     text-align:center;
@@ -184,7 +182,6 @@ background-image: url("../images/placeholder2.jpg");
 #desktop-dp{
     display: none;
 }
-
 #mobile-dp{
     display:flex;
     position: absolute;
@@ -196,15 +193,13 @@ background-image: url("../images/placeholder2.jpg");
 #heroImage{
     height: 150px;
 }
+
 #about p{
     border-left: none;
     width: 100%;
     padding-right: 25px;
 } 
-.contact-links{
-    border-left: none;
-    width: 100%;
-}
+
 .grid{
     border-left: none;
     width: 100%;
@@ -220,8 +215,11 @@ background-image: url("../images/placeholder2.jpg");
     "placeholder5"
     ;
 }
+
 .contact-links{
    background-color: rgba(2, 29, 49, 0.7);
+   border-left: none;
+    width: 100%;
 }
 .contact-links img{
     width: 30px;
