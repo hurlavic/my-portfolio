@@ -72,12 +72,7 @@ h2 {
     margin-top: 100px;
     padding: 15px;
 }
-/* #myWorks h2{
-    width: 25%;
-    float: left;
-    text-align: center;
-    font-size: 40px;
-} */
+
 .grid{
     width: 65%;
     float: left;
@@ -133,24 +128,13 @@ background-image: url("../images/placeholder2.jpg");
     padding: 8px;
     width: auto;
 }
-/* #gridWork a{
-    width:100%;
-    height:100%;
-    top:0;
-    left: 0;
-    z-index: 1;
-} */
 
 /* contact section */
 #contact{
     margin-top: 100px;
     padding: 15px;
 }
-/* #contact h2{
-    width: 25%;
-    float: left;
-    text-align: center;
-} */
+
 .contact-links{
     width: 65%;
     float: left;
@@ -160,8 +144,6 @@ background-image: url("../images/placeholder2.jpg");
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
-    
-    
 }
 .contact-links img{
     width: 30px;
@@ -170,11 +152,14 @@ background-image: url("../images/placeholder2.jpg");
 }
 
 /* Responsive CSS layout */
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 750px){
   .header{
     display:flex;
     flex-direction: column;
     justify-content: center;
+  }
+  .banner img{
+    display: none;
   }
   .nav_links {
     background: blueviolet;
@@ -185,7 +170,49 @@ background-image: url("../images/placeholder2.jpg");
   .nav_links li a{
     color: white;
     }
+
+    /* .banner img{
+    position: absolute;
+    left: 250px;
+    top: 200px;
+} */
+h2{
+    font-size: 25px;
+    background-color: blueviolet;
+    color: white;
+    padding: 5px;
 }
-  .banner img{
-    position:;
-  }
+#about p, 
+.contact-links{
+    border-left: none;
+    width: 75%;
+    padding-left: 10px;
+}
+
+.grid{
+    border-left: none;
+    width: 75%;
+    padding-left: 10px;
+    display: grid;
+    grid-template-rows: 300px 150px 150px 150px 150px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "placeholder1"
+    "placeholder2"
+    "placeholder3"
+    "placeholder4"
+    "placeholder5"
+    ;
+    margin-bottom: 30px;
+}
+
+.contact-links{
+   background-color: none;
+}
+.contact-links img{
+    width: 30px;
+    border-radius: 50px;
+    margin-left: 45px;
+}
+}
+ 
