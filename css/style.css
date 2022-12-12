@@ -158,41 +158,48 @@ background-image: url("../images/placeholder2.jpg");
     flex-direction: column;
     justify-content: center;
   }
-  .banner img{
-    display: none;
-  }
+
   .nav_links {
-    background: blueviolet;
     padding: 10px;
-    width: 100%;
-    text-align: center;
+    text-align:center;
     } 
   .nav_links li a{
-    color: white;
-    }
+    color: blue;
+    font-weight: 500;
+}
+.banner img{
+    display: none;
+}
 
-    /* .banner img{
-    position: absolute;
-    left: 250px;
-    top: 200px;
-} */
 h2{
     font-size: 25px;
-    background-color: blueviolet;
-    color: white;
+    color: black;
     padding: 5px;
+    text-align: center;
+    width: 100%;
 }
-#about p, 
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about p{
+    border-left: none;
+    width: 100%;
+    padding-right: 20px;
+
+} 
 .contact-links{
     border-left: none;
-    width: 75%;
-    padding-left: 10px;
+    width: 100%;
+   
 }
 
 .grid{
     border-left: none;
-    width: 75%;
-    padding-left: 10px;
+    width: 100%;
     display: grid;
     grid-template-rows: 300px 150px 150px 150px 150px;
     grid-template-columns: 1fr;
@@ -203,11 +210,11 @@ h2{
     "placeholder4"
     "placeholder5"
     ;
-    margin-bottom: 30px;
+    margin-bottom: 0;
 }
 
 .contact-links{
-   background-color: none;
+   background-color: aliceblue;
 }
 .contact-links img{
     width: 30px;
