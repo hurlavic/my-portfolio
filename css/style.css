@@ -13,7 +13,7 @@ h2 {
     text-align: center;
     font-size: 35px;
 }
-.section {
+section {
     margin-top: 100px;
     padding: 15px;
 }
@@ -41,21 +41,20 @@ h2 {
 
 /* hero section */
 
-.heroImage{
-    background-image: url("../images/background.jpg");
-    height: 300px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 20px;
+#heroImage{
+ height: 300px;
+ width:100%;
 }
-.banner img{
+#desktop-dp{
     width: 150px;
     position: absolute;
     border-radius: 100px;
-    border: 2px solid blueviolet;
+    border: 2px solid rgb(36, 10, 139);
     left: 550px;
     top: 300px;
+}
+#mobile-dp{
+    display: none;
 }
 /* about section */
 
@@ -117,6 +116,12 @@ background-image: url("../images/placeholder2.jpg");
     position: relative;
     align-content: end;
     border: 3px solid blueviolet;
+    
+}
+.grid a{
+    display: block;
+    width: 100%;
+    height: 300px;
 }
 .title{
     background-color: rgba(0, 0, 0, 0.7);
@@ -134,25 +139,40 @@ background-image: url("../images/placeholder2.jpg");
     border-left: 6px solid rgb(13, 13, 118);
     background-color: rgb(171, 171, 243);
     padding: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
 }
 .contact-links img{
     width: 30px;
-    border-radius: 50px;
+    border-radius: 10px;
     margin-left: 45px;
 }
 
 /* Responsive CSS layout */
 @media only screen and (max-width: 750px){
-  .header{
+    h2{
+        font-size: 25px;
+        color: black;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        margin: 0 auto;
+    }
+
+.header{
     display:flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  .nav_links li {
+.nav_links li {
     display: block;
     text-align:center;
     padding: 5px;
@@ -161,37 +181,30 @@ background-image: url("../images/placeholder2.jpg");
     color: rgb(46, 20, 133);
     font-weight: 500;
 }
-.banner img{
+#desktop-dp{
     display: none;
 }
 
-h2{
-    font-size: 25px;
-    color: black;
-    margin-bottom: 20px;
-    text-align: center;
-    width: 100%;
+#mobile-dp{
+    display:flex;
+    position: absolute;
+    left: 20px;
+    width: 50px;
+    border-radius: 100px;
+    border: 2px solid rgb(36, 10, 139);
 }
-
-.section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
+#heroImage{
+    height: 150px;
 }
-
 #about p{
     border-left: none;
     width: 100%;
-    padding-right: 20px;
-
+    padding-right: 25px;
 } 
 .contact-links{
     border-left: none;
     width: 100%;
-   
 }
-
 .grid{
     border-left: none;
     width: 100%;
@@ -206,15 +219,13 @@ h2{
     "placeholder4"
     "placeholder5"
     ;
-    margin-bottom: 0;
 }
-
 .contact-links{
    background-color: rgba(2, 29, 49, 0.7);
 }
 .contact-links img{
     width: 30px;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 }
  
